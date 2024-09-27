@@ -32,10 +32,10 @@ struct UpcomingFilmListView: View {
             }
         }
         .onAppear {
-            viewModel.fetchFilms(page:currentPage)
+            viewModel.getFilms(page:currentPage)
         }
         .onChange(of: currentPage) {
-            viewModel.fetchFilms(page: currentPage)
+            viewModel.getFilms(page: currentPage)
         }
     }
 }

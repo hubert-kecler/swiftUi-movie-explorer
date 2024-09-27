@@ -8,16 +8,14 @@
 import Foundation
 
 class FilmDetailViewModel: ObservableObject {
-    private let filmService = FilmService()
+    private let apiClient = APIClient()
     @Published var film: FilmDetailModel?
     
-    func fetchDetailFilm(filmId:Int) {
+    func getDetailFilm(filmId:Int) {
         Task {
             do {
-                let fetchedFilm = try await filmService.fetchFilmDetail(filmId: filmId)
-                DispatchQueue.main.async {
-                    self.film = fetchedFilm
-                }
+                let response = try await apiClient.request(endpoint: .detailFilm(filmId: filmId),  responseModel: FilmDetailModel.self)
+                film = response
             } catch {
                 print("Error fetching films: \(error)")
             }

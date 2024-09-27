@@ -31,10 +31,10 @@ struct TopRatedFilmListView: View {
                 .navigationTitle("Top Rated")
             }
             .onAppear {
-                viewModel.fetchFilms(page: currentPage)
+                viewModel.getFilms(page: currentPage)
             }
             .onChange(of: currentPage) {
-                viewModel.fetchFilms(page: currentPage)
+                viewModel.getFilms(page: currentPage)
             }
         }
     }

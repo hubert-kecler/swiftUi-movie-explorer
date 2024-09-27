@@ -81,7 +81,7 @@ struct FilmDetailView:View {
                 .navigationTitle(viewModel.film?.title ?? "film title")
                 .navigationBarTitleDisplayMode(.inline)
                 .onAppear {
-                    viewModel.fetchDetailFilm(filmId:filmId)
+                    viewModel.getDetailFilm(filmId:filmId)
                 }
             VStack {
                 HStack {

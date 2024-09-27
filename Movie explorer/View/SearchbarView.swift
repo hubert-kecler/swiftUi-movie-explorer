@@ -13,7 +13,7 @@ struct SerchBarView:View{
     @Binding var searchedFilms: [FilmModel]
     var body: some View {
                TextField("Search a film title", text: $filmTitle, onCommit: {
-                   viewModel.fetchFilmsFromName(filmName: filmTitle)
+                   viewModel.getFilms(filmName: filmTitle)
                })
                .padding()
                .frame(height: 40)
