@@ -12,7 +12,7 @@ struct PopularFilmListView: View {
            GridItem(.flexible()),
            GridItem(.flexible())
        ]
-    @StateObject private var viewModel = PopularFilmListViewModel()
+    @StateObject private var viewModel = FilmListViewModel()
     let baseUrl = "https://image.tmdb.org/t/p/w500"
     @State private var currentPage = 1
     var body: some View {
@@ -30,10 +30,10 @@ struct PopularFilmListView: View {
             }
             .navigationTitle("Popular")
             .onAppear {
-                viewModel.getFilms(page:currentPage)
+                viewModel.getFilms(page:currentPage,endpoint: .popularFilms)
             }
             .onChange(of: currentPage) {
-                viewModel.getFilms(page: currentPage)
+                viewModel.getFilms(page: currentPage, endpoint: .popularFilms)
             }
         }
     }

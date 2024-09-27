@@ -2,19 +2,19 @@
 //  FilmListViewModel.swift
 //  Movie explorer
 //
-//  Created by Hubert Kecler on 17/09/24.
+//  Created by Hubert Kecler on 27/09/24.
 //
 
 import Foundation
 
-class PopularFilmListViewModel: ObservableObject {
+class FilmListViewModel: ObservableObject {
     private let apiClient = APIClient()
     @Published var films: [FilmModel] = []
 
-    func getFilms(page:Int) {
+    func getFilms(page:Int, endpoint: Endpoint) {
         Task {
             do {
-                let response = try await apiClient.request(endpoint: .popularFilms, urlQueryItemKey: "page", urlQueryItemValue: String(page), responseModel: FilmListModel.self)
+                let response = try await apiClient.request(endpoint: endpoint, urlQueryItemKey: "page", urlQueryItemValue: String(page), responseModel: FilmListModel.self)
                 films = response.results
             } catch {
                 print("Error fetching films: \(error)")

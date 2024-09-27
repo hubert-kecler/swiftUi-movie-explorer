@@ -14,7 +14,7 @@ struct SearchFilmListView: View {
            GridItem(.flexible()),
            GridItem(.flexible())
        ]
-    @StateObject private var viewModel = PopularFilmListViewModel()
+    @StateObject private var viewModel = FilmListViewModel()
     @State private var searchedFilms: [FilmModel] = []
 
     let baseUrl = "https://image.tmdb.org/t/p/w500"

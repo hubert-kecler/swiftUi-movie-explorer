@@ -1,5 +1,5 @@
 //
-//  UpcomingFilm.swift
+//  TopRatedFilmList.swift
 //  Movie explorer
 //
 //  Created by Hubert Kecler on 18/09/24.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct UpcomingFilmListView: View {
+struct TopRatedFilmListView: View {
     let columns = [
            GridItem(.flexible()),
            GridItem(.flexible())
        ]
-    @StateObject private var viewModel = UpcomingFilmListViewModel()
+    @StateObject private var viewModel = FilmListViewModel()
     let baseUrl = "https://image.tmdb.org/t/p/w500"
     @State private var currentPage = 1
 
@@ -28,14 +28,14 @@ struct UpcomingFilmListView: View {
                     .padding(.top, 20)
                     PaginationView(currentPage: $currentPage)
                 }
-                .navigationTitle("Upcoming")
+                .navigationTitle("Top Rated")
             }
-        }
-        .onAppear {
-            viewModel.getFilms(page:currentPage)
-        }
-        .onChange(of: currentPage) {
-            viewModel.getFilms(page: currentPage)
+            .onAppear {
+                viewModel.getFilms(page: currentPage, endpoint: .topRatedFilms)
+            }
+            .onChange(of: currentPage) {
+                viewModel.getFilms(page: currentPage, endpoint: .topRatedFilms)
+            }
         }
     }
 }
