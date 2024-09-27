@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FilmDetailView:View {
+    @EnvironmentObject var favoritesManager: FavoritesManager
     let filmId:Int
     let baseUrl = "https://image.tmdb.org/t/p/w500"
     var maxRataing=10.0
@@ -36,6 +37,27 @@ struct FilmDetailView:View {
                         ProgressView()
                     }
                 }
+                HStack{
+                    Spacer()
+                    VStack{
+                        Spacer()
+                        Button(action: {
+                            if let film = viewModel.film {
+                                if favoritesManager.isFavorite(film) {
+                                    favoritesManager.removeFromFavorites(film)
+                                } else {
+                                    favoritesManager.addToFavorites(film)
+                                }
+                            }
+                        }) {
+                            Image(systemName: viewModel.film != nil && favoritesManager.isFavorite(viewModel.film!) ? "heart.fill" : "heart")
+                                .foregroundColor(viewModel.film != nil && favoritesManager.isFavorite(viewModel.film!) ? .red : .gray)
+                                .font(.title)
+                        }
+                    }
+                }
+                .padding()
+                
             }
             HStack{
                 StarRatingView(rating: viewModel.film?.voteAverage ?? 0)

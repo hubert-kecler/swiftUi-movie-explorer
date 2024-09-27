@@ -14,7 +14,6 @@ struct PaginationView: View{
             VStack{
                 Button(action: {
                     currentPage = currentPage - 1
-                    print(currentPage)
                 }) {
                     Text("<- previous page")
                         .padding()
@@ -26,7 +25,6 @@ struct PaginationView: View{
             VStack{
                 Button(action: {
                     currentPage = currentPage + 1
-                    print(currentPage)
                 }) {
                     Text("next page ->")
                         .padding()
