@@ -7,9 +7,11 @@
 
 import SwiftUI
 struct HomePageView: View {
+    @StateObject var favoritesManager = FavoritesManager()
     var body: some View {
         VStack {
             FilmTabView()
+                .environmentObject(favoritesManager)
         }
     }
 }

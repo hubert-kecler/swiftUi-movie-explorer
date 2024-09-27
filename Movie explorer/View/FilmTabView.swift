@@ -28,6 +28,10 @@ struct FilmTabView: View {
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")
                 }
+            FavoritesView()
+                .tabItem {
+                    Label("Favorites", systemImage: "heart")
+                }
         }
         .accentColor(colorScheme == .dark ? .orange : .blue)    }
 }
