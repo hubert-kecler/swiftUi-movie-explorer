@@ -22,7 +22,9 @@ class FilmListViewModel: ObservableObject {
                     urlQueryItemValue: String(1),
                     responseModel: FilmListModel.self
                 )
-                films = response.results
+                DispatchQueue.main.async {
+                    self.films = response.results
+                }
             } catch {
                 print("Error fetching films: \(error)")
             }

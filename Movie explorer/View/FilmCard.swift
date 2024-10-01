@@ -29,7 +29,7 @@ struct FilmCard:View {
                 HStack{
                     if let releaseDate = dateFromString(film.releaseDate) {
                         Text(releaseDate, format: .dateTime.day().month().year())
-                            .foregroundStyle(Color.white)
+                            .foregroundStyle(Color.secondary)
                     } else {
                         Text("Data non disponibile")
                     }
