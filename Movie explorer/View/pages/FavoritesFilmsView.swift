@@ -13,10 +13,14 @@ struct FavoritesView: View {
     var body: some View {
         NavigationView{
             HStack{
-                List(favoritesManager.favoriteFilms) { film in
-                    NavigationLink(destination: FilmDetailView(filmId: film.id)){
-                        HStack{
-                            Text(film.title)
+                if favoritesManager.favoriteFilms.isEmpty{
+                    Text("no favorites movie")
+                }else{
+                    List(favoritesManager.favoriteFilms) { film in
+                        NavigationLink(destination: FilmDetailView(filmId: film.id)){
+                            HStack{
+                                Text(film.title)
+                            }
                         }
                     }
                 }

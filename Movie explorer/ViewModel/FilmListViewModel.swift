@@ -22,7 +22,8 @@ class FilmListViewModel: ObservableObject {
                     urlQueryItemValue: String(1),
                     responseModel: FilmListModel.self
                 )
-                DispatchQueue.main.async {
+                DispatchQueue.main.async { [weak self] in
+                    guard let self = self else { return }
                     self.films = response.results
                 }
             } catch {
@@ -42,7 +43,8 @@ class FilmListViewModel: ObservableObject {
                 urlQueryItemValue: String(page),
                 responseModel: FilmListModel.self
             )
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }  
                 self.films += response.results
                 self.isLoading = false
             }
