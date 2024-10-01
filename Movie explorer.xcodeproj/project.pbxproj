@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED348D552CABEBC5009E44D4 /* FilmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED348D542CABEBBB009E44D4 /* FilmListView.swift */; };
+		ED348D572CABF7BB009E44D4 /* costants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED348D562CABF7B2009E44D4 /* costants.swift */; };
 		ED3490862CA418F000F32EB5 /* endpointModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3490852CA418F000F32EB5 /* endpointModels.swift */; };
 		ED3490882CA44AF500F32EB5 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3490872CA44AF500F32EB5 /* Favorites.swift */; };
 		ED42E2012C998527000BBF05 /* FilmDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E2002C998527000BBF05 /* FilmDetailModel.swift */; };
 		ED42E2032C998564000BBF05 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E2022C998564000BBF05 /* ErrorModel.swift */; };
 		ED42E2052C998708000BBF05 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E2042C998708000BBF05 /* APIClient.swift */; };
-		ED42E2092C9987CC000BBF05 /* PopularFilmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E2082C9987CC000BBF05 /* PopularFilmListView.swift */; };
 		ED42E20B2C9987E0000BBF05 /* FilmDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E20A2C9987E0000BBF05 /* FilmDetailView.swift */; };
 		ED42E20F2C998806000BBF05 /* FilmDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E20E2C998806000BBF05 /* FilmDetailViewModel.swift */; };
 		ED42E2112C998EE8000BBF05 /* FilmListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E2102C998EE8000BBF05 /* FilmListModel.swift */; };
@@ -23,8 +24,6 @@
 		ED42E21B2C99D63A000BBF05 /* FilmResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E21A2C99D63A000BBF05 /* FilmResults.swift */; };
 		ED42E21D2C9ACDDD000BBF05 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E21C2C9ACDDD000BBF05 /* StarRatingView.swift */; };
 		ED42E21F2C9B0A5E000BBF05 /* FilmTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E21E2C9B0A5E000BBF05 /* FilmTabView.swift */; };
-		ED42E2212C9B0CB4000BBF05 /* TopRatedFilmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E2202C9B0CB4000BBF05 /* TopRatedFilmListView.swift */; };
-		ED42E2232C9B0D1E000BBF05 /* UpcomingFilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E2222C9B0D1E000BBF05 /* UpcomingFilmView.swift */; };
 		ED42E2252C9B1055000BBF05 /* SearchFilmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E2242C9B1055000BBF05 /* SearchFilmListView.swift */; };
 		ED42E22F2C9D813F000BBF05 /* PaginationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42E22E2C9D813F000BBF05 /* PaginationView.swift */; };
 		ED8124DD2CA458BF007519A3 /* FavoritesFilmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8124DC2CA458BF007519A3 /* FavoritesFilmsView.swift */; };
@@ -55,12 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED348D542CABEBBB009E44D4 /* FilmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListView.swift; sourceTree = "<group>"; };
+		ED348D562CABF7B2009E44D4 /* costants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = costants.swift; sourceTree = "<group>"; };
 		ED3490852CA418F000F32EB5 /* endpointModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = endpointModels.swift; sourceTree = "<group>"; };
 		ED3490872CA44AF500F32EB5 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		ED42E2002C998527000BBF05 /* FilmDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailModel.swift; sourceTree = "<group>"; };
 		ED42E2022C998564000BBF05 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		ED42E2042C998708000BBF05 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		ED42E2082C9987CC000BBF05 /* PopularFilmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularFilmListView.swift; sourceTree = "<group>"; };
 		ED42E20A2C9987E0000BBF05 /* FilmDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailView.swift; sourceTree = "<group>"; };
 		ED42E20E2C998806000BBF05 /* FilmDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewModel.swift; sourceTree = "<group>"; };
 		ED42E2102C998EE8000BBF05 /* FilmListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListModel.swift; sourceTree = "<group>"; };
@@ -71,8 +71,6 @@
 		ED42E21A2C99D63A000BBF05 /* FilmResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmResults.swift; sourceTree = "<group>"; };
 		ED42E21C2C9ACDDD000BBF05 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		ED42E21E2C9B0A5E000BBF05 /* FilmTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTabView.swift; sourceTree = "<group>"; };
-		ED42E2202C9B0CB4000BBF05 /* TopRatedFilmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedFilmListView.swift; sourceTree = "<group>"; };
-		ED42E2222C9B0D1E000BBF05 /* UpcomingFilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingFilmView.swift; sourceTree = "<group>"; };
 		ED42E2242C9B1055000BBF05 /* SearchFilmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilmListView.swift; sourceTree = "<group>"; };
 		ED42E22E2C9D813F000BBF05 /* PaginationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationView.swift; sourceTree = "<group>"; };
 		ED8124DC2CA458BF007519A3 /* FavoritesFilmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesFilmsView.swift; sourceTree = "<group>"; };
@@ -169,6 +167,7 @@
 		ED42E1FF2C99849F000BBF05 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				ED348D562CABF7B2009E44D4 /* costants.swift */,
 				ED3490872CA44AF500F32EB5 /* Favorites.swift */,
 			);
 			path = Utilities;
@@ -185,10 +184,8 @@
 		ED9B98E62CA6F028007F3447 /* pages */ = {
 			isa = PBXGroup;
 			children = (
+				ED348D542CABEBBB009E44D4 /* FilmListView.swift */,
 				ED42E20A2C9987E0000BBF05 /* FilmDetailView.swift */,
-				ED42E2082C9987CC000BBF05 /* PopularFilmListView.swift */,
-				ED42E2222C9B0D1E000BBF05 /* UpcomingFilmView.swift */,
-				ED42E2202C9B0CB4000BBF05 /* TopRatedFilmListView.swift */,
 				ED42E2242C9B1055000BBF05 /* SearchFilmListView.swift */,
 				ED8124DC2CA458BF007519A3 /* FavoritesFilmsView.swift */,
 			);
@@ -320,7 +317,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					EDA45F0C2C9873E600D93335 = {
 						CreatedOnToolsVersion = 15.4;
@@ -390,20 +387,19 @@
 				ED42E2192C99C71A000BBF05 /* FilmFromNameViewModel.swift in Sources */,
 				ED42E2132C99959C000BBF05 /* HomePage.swift in Sources */,
 				ED3490862CA418F000F32EB5 /* endpointModels.swift in Sources */,
-				ED42E2212C9B0CB4000BBF05 /* TopRatedFilmListView.swift in Sources */,
 				ED8124DD2CA458BF007519A3 /* FavoritesFilmsView.swift in Sources */,
-				ED42E2092C9987CC000BBF05 /* PopularFilmListView.swift in Sources */,
 				ED9B98E42CA6EE01007F3447 /* FilmListViewModel.swift in Sources */,
 				ED42E21B2C99D63A000BBF05 /* FilmResults.swift in Sources */,
 				ED42E2012C998527000BBF05 /* FilmDetailModel.swift in Sources */,
 				ED42E21F2C9B0A5E000BBF05 /* FilmTabView.swift in Sources */,
 				ED42E22F2C9D813F000BBF05 /* PaginationView.swift in Sources */,
+				ED348D552CABEBC5009E44D4 /* FilmListView.swift in Sources */,
 				ED42E2032C998564000BBF05 /* ErrorModel.swift in Sources */,
 				ED42E20B2C9987E0000BBF05 /* FilmDetailView.swift in Sources */,
 				ED42E21D2C9ACDDD000BBF05 /* StarRatingView.swift in Sources */,
 				ED42E20F2C998806000BBF05 /* FilmDetailViewModel.swift in Sources */,
-				ED42E2232C9B0D1E000BBF05 /* UpcomingFilmView.swift in Sources */,
 				ED42E2172C99BE93000BBF05 /* SearchbarView.swift in Sources */,
+				ED348D572CABF7BB009E44D4 /* costants.swift in Sources */,
 				ED42E2052C998708000BBF05 /* APIClient.swift in Sources */,
 				EDA45F112C9873E600D93335 /* Movie_explorerApp.swift in Sources */,
 				ED42E2112C998EE8000BBF05 /* FilmListModel.swift in Sources */,
@@ -479,6 +475,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -540,6 +537,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -567,6 +565,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Movie explorer/Movie_explorer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Movie explorer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -603,6 +602,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Movie explorer/Movie_explorer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Movie explorer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -634,10 +634,10 @@
 		EDA45F362C9873ED00D93335 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
@@ -656,10 +656,10 @@
 		EDA45F372C9873ED00D93335 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
@@ -678,9 +678,9 @@
 		EDA45F392C9873ED00D93335 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
@@ -699,9 +699,9 @@
 		EDA45F3A2C9873ED00D93335 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;

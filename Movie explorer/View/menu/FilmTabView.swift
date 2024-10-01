@@ -11,16 +11,16 @@ struct FilmTabView: View {
     @Environment(\.colorScheme) var colorScheme 
     var body: some View {
         TabView{
-            PopularFilmListView()
+            FilmListView(endpoint: Endpoint.popularFilms, navigationTitle: "Popular")
                 .tabItem {
                     Label("popular", systemImage: "star")
                 }
-            UpcomingFilmListView()
+            FilmListView(endpoint: Endpoint.upcomingFilms, navigationTitle: "Upcoming")
                 .tabItem {
                     Label("Upcoming", systemImage: "film")
                 }
             
-            TopRatedFilmListView()
+            FilmListView(endpoint: Endpoint.topRatedFilms, navigationTitle: "Top Rated")
                 .tabItem {
                     Label("Top Rated", systemImage: "checkmark.seal.fill")
                 }
